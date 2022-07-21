@@ -1,7 +1,13 @@
-.header{
-  background-color: orange;
-}
+@use 'normalize';
+@use 'variables';
+@use 'app';
+@use 'header';
 
-.App{
-  background-color: red;
+body{
+  font-family: #{variables.$font_family};
+  color: #{variables.$color_black};
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
