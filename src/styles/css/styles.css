@@ -316,16 +316,33 @@ template {
   display: flex;
   height: 100vh;
   width: 100%;
-  max-width: 100%;
   flex-direction: column;
   justify-content: center;
   background-color: #FF6107;
 }
 .header_title {
   width: 50vw;
-  max-width: 100%;
   margin: 0 auto;
   font-size: 4rem;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7ad82;
+}
+.about_title {
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+}
+.about_img {
+  width: 200px;
+  height: 300px;
+  border-radius: 16px;
 }
 
 body {
@@ -333,7 +350,12 @@ body {
   color: #171615;
 }
 body::-webkit-scrollbar {
-  display: none;
+  width: 0.6rem;
+  background-color: #171615;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #C40018;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

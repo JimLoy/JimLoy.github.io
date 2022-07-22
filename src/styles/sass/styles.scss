@@ -1,13 +1,20 @@
 @use 'normalize';
-@use 'variables';
+@use 'var';
 @use 'app';
 @use 'header';
+@use 'about';
 
 body{
-  font-family: #{variables.$font_family};
-  color: #{variables.$color_black};
+  font-family: #{var.$font_family};
+  color: #{var.$color_black};
 
   &::-webkit-scrollbar{
-    display: none;
+    width: .6rem;
+    background-color: #{var.$color_black};
+  }
+
+  &::-webkit-scrollbar-thumb{
+    background-color: #{var.$color_red};
+    border-radius: 1rem;
   }
 }
