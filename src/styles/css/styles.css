@@ -361,6 +361,71 @@ template {
   font-size: 2rem;
 }
 
+.projects_title {
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+.projects_cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+  display: grid;
+  background-color: #fad3bc;
+  border: 2px transparent solid;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 16px;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 4rem 7rem 4rem;
+}
+.card_title {
+  grid-column: 1;
+  grid-row: 1;
+}
+.card_img {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  border-radius: 16px;
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  grid-column: 2;
+  grid-row: 1/4;
+}
+.card_description {
+  grid-column: 1;
+  grid-row: 2;
+}
+.card_bts {
+  grid-column: 1;
+  grid-row: 3;
+  margin: 0 0 1rem 3rem;
+}
+.card_button {
+  background-color: transparent;
+  padding: 1rem;
+  border: 2px #FF6107 solid;
+  border-radius: 16px;
+  font-family: inherit;
+  color: #FF6107;
+}
+.card_link {
+  text-decoration: none;
+}
+.card_link + .card_link {
+  margin-left: 3rem;
+}
+.card_link :hover {
+  background-color: #FF6107;
+  color: #171615;
+}
+
 body {
   font-family: Raleway, sans-serif;
   color: #171615;

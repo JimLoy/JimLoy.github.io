@@ -3,6 +3,8 @@
 @use 'app';
 @use 'header';
 @use 'about';
+@use 'projects';
+@use 'project_card';
 
 body{
   font-family: #{var.$font_family};

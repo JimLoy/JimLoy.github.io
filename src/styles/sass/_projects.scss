@@ -1,0 +1,16 @@
+.projects{
+
+  &_title{
+    width: 50vw;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  &_cards{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+  }
+
+}

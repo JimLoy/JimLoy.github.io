@@ -4,17 +4,20 @@ import country from '../assets/landingPageWallpaper.jpg';
 
 
 export default function ProjectCard({name,description,repository,deploy}){
+
+  const img = name === "PI Countries" ? country 
+        : name === "PG Gimme a Ride" ? gimme 
+        : weather
+  
   return(
-    <div>
-      <h2>{name}</h2>
-      <img src={name === "PI Countries" ? 
-        country 
-        : name === "PG Gimme a Ride" ? 
-        gimme 
-        : weather} alt={`Project ${name}`} />
-      <p>{description}</p>
-      <button><a href={repository} alt="Repository">Repository</a></button>
-      <button><a href={deploy} alt="Deploy">Deploy</a></button>
+    <div className='card'>
+      <h2 className='card_title'>{name}</h2>
+      <img className='card_img' src={img} alt={`Project ${name}`} />
+      <p className='card_description'>{description}</p>
+      <div className="card_bts">
+        <a href={repository} className='card_link' alt="Repository"><button className='card_button'>Repository</button></a>
+        <a href={deploy} className='card_link' alt="Deploy"><button className='card_button'>Deploy</button></a>
+      </div>
     </div>
   )
 }
