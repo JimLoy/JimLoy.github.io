@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: #{var.$color_bk};
-  padding: 4rem 0;
+  padding: 10rem 0;
 
   &_container{
     margin: 3rem 0;
@@ -17,15 +17,15 @@
 
   &_title{
     width: 50vw;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
     font-size: 3rem;
     text-align: center;
   }
 
   &_img{
     margin: 0 auto;
-    width: 300px;
-    height: 400px;
+    width: 370px;
+    height: 500px;
     border-radius: 16px;
   }
 

@@ -1,0 +1,13 @@
+@use 'var';
+
+.footer{
+  display: flex;
+  background-color: #{var.$color_black};
+  justify-content: center;
+
+  &_icon{
+    margin: 1rem;
+    font-size: 40px;
+    color: #{var.$color_primary};
+  }
+}

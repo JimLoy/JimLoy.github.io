@@ -5,18 +5,21 @@
 @use 'about';
 @use 'projects';
 @use 'project_card';
+@use 'contact';
+@use 'footer';
 
 body{
   font-family: #{var.$font_family};
   color: #{var.$color_black};
 
   &::-webkit-scrollbar{
-    width: .6rem;
-    background-color: #{var.$color_black};
+    //width: .6rem;
+    //background-color: #{var.$color_black};
+    display: none;
   }
 
-  &::-webkit-scrollbar-thumb{
-    background-color: #{var.$color_red};
-    border-radius: 1rem;
-  }
+  //&::-webkit-scrollbar-thumb{
+  //  background-color: #{var.$color_primary};
+  // border-radius: 2px;
+  //}
 }

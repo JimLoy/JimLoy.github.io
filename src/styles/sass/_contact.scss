@@ -1,0 +1,61 @@
+@use 'var';
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #{var.$color_primary};
+
+  &_title{
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto;
+    font-size: 4rem;
+    padding: 2rem 0;
+  }
+
+  &_form{
+    display: grid;
+    width: 20rem;
+    padding: 3rem;
+    border-radius: 16px;
+  }
+
+  &_input, &_textarea{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: none;  
+    font-size: 1em;
+    resize: none; 
+    border-bottom: 1px solid transparent;
+    border-radius: 10px;
+    font-family: inherit;
+  }  
+
+  &_textarea {  
+    resize: none;
+  }
+
+  &_button {
+    background-color: transparent;
+    padding: 1rem;
+    border: 2px #{var.$color_black} solid;
+    border-radius: 16px;
+    font-family: inherit;
+    color: #{var.$color_black};
+
+    :hover{
+      background-color: #{var.$color_primary};
+      color: #{var.$color_black};
+    }
+  }
+
+
+}
+
+#mailto{
+  display: none;
+}

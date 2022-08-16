@@ -332,7 +332,7 @@ template {
   flex-direction: column;
   justify-content: center;
   background-color: #fad3bc;
-  padding: 4rem 0;
+  padding: 10rem 0;
 }
 .about_container {
   margin: 3rem 0;
@@ -341,14 +341,14 @@ template {
 }
 .about_title {
   width: 50vw;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   font-size: 3rem;
   text-align: center;
 }
 .about_img {
   margin: 0 auto;
-  width: 300px;
-  height: 400px;
+  width: 370px;
+  height: 500px;
   border-radius: 16px;
 }
 .about_p_container {
@@ -361,6 +361,9 @@ template {
   font-size: 2rem;
 }
 
+.projects {
+  padding: 2rem 0;
+}
 .projects_title {
   width: 50vw;
   margin: 0 auto;
@@ -377,7 +380,7 @@ template {
   display: grid;
   background-color: #fad3bc;
   border: 2px transparent solid;
-  padding: 1rem;
+  padding: 2rem;
   margin: 2rem;
   border-radius: 16px;
   grid-template-columns: 70% 30%;
@@ -426,17 +429,75 @@ template {
   color: #171615;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FF6107;
+}
+.contact_title {
+  text-align: center;
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+.contact_form {
+  display: grid;
+  width: 20rem;
+  padding: 3rem;
+  border-radius: 16px;
+}
+.contact_input, .contact_textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1em;
+  resize: none;
+  border-bottom: 1px solid transparent;
+  border-radius: 10px;
+  font-family: inherit;
+}
+.contact_textarea {
+  resize: none;
+}
+.contact_button {
+  background-color: transparent;
+  padding: 1rem;
+  border: 2px #171615 solid;
+  border-radius: 16px;
+  font-family: inherit;
+  color: #171615;
+}
+.contact_button :hover {
+  background-color: #FF6107;
+  color: #171615;
+}
+
+#mailto {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  background-color: #171615;
+  justify-content: center;
+}
+.footer_icon {
+  margin: 1rem;
+  font-size: 40px;
+  color: #FF6107;
+}
+
 body {
   font-family: Raleway, sans-serif;
   color: #171615;
 }
 body::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: #171615;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #C40018;
-  border-radius: 1rem;
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
