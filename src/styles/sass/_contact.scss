@@ -2,18 +2,9 @@
 
 .contact{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #{var.$color_primary};
-
-  &_title{
-    text-align: center;
-    width: 50vw;
-    margin: 0 auto;
-    font-size: 4rem;
-    padding: 2rem 0;
-  }
 
   &_form{
     display: grid;
@@ -44,12 +35,11 @@
     padding: 1rem;
     border: 2px #{var.$color_black} solid;
     border-radius: 16px;
-    font-family: inherit;
     color: #{var.$color_black};
+    
 
-    :hover{
-      background-color: #{var.$color_primary};
-      color: #{var.$color_black};
+    &:hover{
+      background-color: #{var.$color_secondary};
     }
   }
 

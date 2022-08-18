@@ -9,5 +9,10 @@
     margin: 1rem;
     font-size: 40px;
     color: #{var.$color_primary};
+
+    &:hover{
+      font-size: 50px;
+      color: #{var.$color_secondary};
+    }
   }
 }

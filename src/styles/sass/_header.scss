@@ -9,8 +9,7 @@
   background-color: #{var.$color_primary};
 
   &_title{
-    width: 50vw;
-    margin: 0 auto;
-    font-size: 4rem;
+    text-align: left;
+    padding: 0;
   }
 }

@@ -11,7 +11,7 @@ export default function ProjectCard({name,description,repository,deploy}){
   
   return(
     <div className='card'>
-      <h2 className='card_title'>{name}</h2>
+      <h3 className='card_title'>{name}</h3>
       <img className='card_img' src={img} alt={`Project ${name}`} />
       <p className='card_description'>{description}</p>
       <div className="card_bts">
