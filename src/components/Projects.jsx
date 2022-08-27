@@ -21,7 +21,7 @@ export default function Projects(){
         name="Weather App" 
         description="The front-end is developed with React and a reduced back-end with express (in Node). It returns the temperature, wind speed, humidity and wind chill of the city you write consuming information from the OpenWeather api." 
         repository="https://github.com/JimLoy/Weather-App" 
-        deploy="https://weather-app-jimloy.herokuapp.com"
+        deploy="https://weather-app-jimloy.vercel.app"
       /> 
       </div>
     </div>
