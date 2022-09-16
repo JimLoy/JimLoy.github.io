@@ -9,7 +9,7 @@ export default function Projects(){
         name="PI Countries" 
         description="Development of a Single Page Application using React.JS and Redux.JS for the Front-End, styled with pure CSS without using external libraries. The data from an API and the Back-End were consumed using Node.JS and Express.JS, adding new functionalities to the Pokeapi API. Some functionalities of the project are to allow to show characteristic information of different countries of the world in an ordered way, either by country name or by population, allowing to filter by continent or by the name of some activity that is performed in this way, to perform searches by name, and to create new activities." 
         repository="https://github.com/JimLoy/PI-Countries" 
-        deploy="https://pi-countries-jimloy.vercel.app"
+        deploy="https://countries-jimloy.vercel.app"
       />
       <ProjectCard 
         name="PG Gimme a Ride" 
