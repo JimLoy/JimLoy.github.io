@@ -1,51 +1,52 @@
 @use 'var';
 
-.contact{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #{var.$color_primary};
+.contact {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #{var.$color_primary};
+	color: #{var.$color_black};
 
-  &_form{
-    display: grid;
-    width: 20rem;
-    padding: 3rem;
-    border-radius: 16px;
-  }
+	&_form {
+		display: grid;
+		width: 20rem;
+		padding: 3rem;
+		border-radius: 16px;
+	}
 
-  &_input, &_textarea{
-    margin-bottom: 15px;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box; 
-    border: none;  
-    font-size: 1em;
-    resize: none; 
-    border-bottom: 1px solid transparent;
-    border-radius: 10px;
-    font-family: inherit;
-  }  
+	&_input,
+	&_textarea {
+		margin-bottom: 15px;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		border: none;
+		font-size: 1em;
+		resize: none;
+		border-radius: 10px;
+		font-family: inherit;
+		background-color: #{var.$color_black};
+		color: #{var.$color_primary};
+		border: 2.5px solid;
+	}
 
-  &_textarea {  
-    resize: none;
-  }
+	&_textarea {
+		resize: none;
+	}
 
-  &_button {
-    background-color: transparent;
-    padding: 1rem;
-    border: 2px #{var.$color_black} solid;
-    border-radius: 16px;
-    color: #{var.$color_black};
-    
+	&_button {
+		background-color: transparent;
+		padding: 1rem;
+		border: 2px #{var.$color_black} solid;
+		border-radius: 16px;
+		color: #{var.$color_black};
 
-    &:hover{
-      background-color: #{var.$color_secondary};
-    }
-  }
-
-
+		&:hover {
+			background-color: #{var.$color_bk};
+		}
+	}
 }
 
-#mailto{
-  display: none;
+#mailto {
+	display: none;
 }

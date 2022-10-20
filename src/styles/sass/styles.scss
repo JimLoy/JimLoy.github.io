@@ -8,26 +8,27 @@
 @use 'contact';
 @use 'footer';
 
-body{
-  font-family: #{var.$font_family};
-  color: #{var.$color_black};
+body {
+	font-family: #{var.$font_family};
+	color: #{var.$color_primary};
 
-  h1,h2{
-    width: 50vw;
-    margin: 0 auto;
-    font-size: 4rem;
-    text-align: center;
-    padding: 3rem 0;
-  }
+	h1,
+	h2 {
+		width: 50vw;
+		margin: 0 auto;
+		font-size: 4rem;
+		text-align: center;
+		padding: 3rem 0;
+	}
 
-  &::-webkit-scrollbar{
-    //width: .6rem;
-    //background-color: #{var.$color_black};
-    display: none;
-  }
+	&::-webkit-scrollbar {
+		//width: .6rem;
+		//background-color: #{var.$color_black};
+		display: none;
+	}
 
-  //&::-webkit-scrollbar-thumb{
-  //  background-color: #{var.$color_primary};
-  // border-radius: 2px;
-  //}
+	//&::-webkit-scrollbar-thumb{
+	//  background-color: #{var.$color_primary};
+	// border-radius: 2px;
+	//}
 }

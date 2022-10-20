@@ -1,37 +1,37 @@
 @use 'var';
 
-.about{
-  display: flex;
-  flex-direction: column;
-  background-color: #{var.$color_bk};
-  padding: 6rem 0;
+.about {
+	display: flex;
+	flex-direction: column;
+	background-color: #{var.$color_black};
+	padding: 6rem 0;
 
-  &_container{
-    margin: 3rem 0;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    
-  }
+	&_container {
+		margin: 3rem 0;
+		display: grid;
+		grid-template-columns: 30% 70%;
+	}
 
-  &_title{
-    margin-bottom: 3rem;
-  }
+	&_title {
+		margin-bottom: 3rem;
+	}
 
-  &_img{
-    margin: 0 auto;
-    width: 370px;
-    height: 500px;
-    border-radius: 16px;
-  }
+	&_img {
+		margin: 0 auto;
+		width: 370px;
+		height: 500px;
+		border-radius: 16px;
+	}
 
-  &_p_container{
-    display: grid;
-    grid-template-rows: repeat(4,1fr);
-  }
+	&_p_container {
+		display: grid;
+		max-width: 60vw;
+		grid-template-rows: repeat(4, 1fr);
+	}
 
-  &_p{
-    margin: auto;
-    width: 100%;
-    font-size: 2rem;
-  }
+	&_p {
+		margin: auto;
+		width: 100%;
+		font-size: 2rem;
+	}
 }
