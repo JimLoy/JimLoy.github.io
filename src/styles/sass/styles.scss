@@ -11,6 +11,7 @@
 body {
 	font-family: #{var.$font_family};
 	color: #{var.$color_primary};
+	background-color: #{var.$color_black};
 
 	h1,
 	h2 {
@@ -19,6 +20,10 @@ body {
 		font-size: 4rem;
 		text-align: center;
 		padding: 3rem 0;
+	}
+
+	button {
+		cursor: pointer;
 	}
 
 	&::-webkit-scrollbar {

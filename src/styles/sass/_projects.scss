@@ -1,11 +1,13 @@
 @use 'var';
 
 .projects {
-	padding: 2rem 0;
+	padding: 3rem 6rem;
+	margin-bottom: 5rem;
 	background-color: #{var.$color_black};
 
 	&_cards {
 		display: grid;
-		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 2rem;
 	}
 }
