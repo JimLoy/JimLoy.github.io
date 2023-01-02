@@ -1,13 +1,14 @@
 @use 'var';
 
 .about {
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	background-color: #{var.$color_black};
 	padding: 6rem 0;
 
 	&_container {
-		margin: 3rem 0;
+		margin: 3rem auto;
 		display: grid;
 		grid-template-columns: 30% 70%;
 	}
