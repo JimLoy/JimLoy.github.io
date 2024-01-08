@@ -19,9 +19,13 @@ export default function ProjectCard({ name, description, repository, deploy }) {
 				<a href={repository} className="card_link repo_bts" alt="Repository">
 					<button className="card_button">Repository</button>
 				</a>
-				<a href={deploy} className="card_link dep_bts" alt="Deploy">
-					<button className="card_button">Deploy</button>
-				</a>
+				{deploy != null 
+					? 
+					<a href={deploy} className="card_link dep_bts" alt="Deploy">
+						<button className="card_button">Deploy</button>
+					</a>
+					: ""
+				}
 			</div>
 		</div>
 	);

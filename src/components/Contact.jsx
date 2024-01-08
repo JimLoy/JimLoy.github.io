@@ -1,21 +1,14 @@
 export default function Contact() {
-	function handleOnSubmit(e) {
-		e.preventDefault();
-		const form = new FormData(e.target);
-		const mailto = document.querySelector('#mailto');
-		mailto.setAttribute(
-			'href',
-			`mailto:juanignaciomoldes1@gmail.com?subject=${form.get(
-				'subject'
-			)}&body=${form.get('message')}`
-		);
-		mailto.click();
-	}
+	/*function copy(){
+		navigator.clipboard.writeText("juanignaciomoldes1@gmail.com")
+		alert("Email copied to clipboard")
+		//<button className="contact_button" onClick={copy}>Copy my email address</button>
+	}*/ 
 
 	return (
 		<div className="contact">
 			<h2 className="contact_title">Contact</h2>
-			<form className="contact_form" onSubmit={handleOnSubmit}>
+			<form className="contact_form" action="mailto:juanignaciomoldes1@gmail.com" method="get" enctype="text/plain">
 				<input
 					className="contact_input"
 					name="subject"
@@ -25,17 +18,14 @@ export default function Contact() {
 				/>
 				<textarea
 					className="contact_textarea"
-					name="message"
+					name="body"
 					cols="30"
 					rows="10"
 					placeholder="Message body"
 					autoComplete="off"
 				></textarea>
-				<button className="contact_button">Submit</button>
+				<button className="contact_button" type="submit" value="Send">Submit</button>
 			</form>
-			<a href="mailto:juanignaciomoldes1@gmail.com" id="mailto">
-				_
-			</a>
 		</div>
 	);
 }
