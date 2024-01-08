@@ -71,4 +71,8 @@
 		font-family: inherit;
 		color: #{var.$color_black};
 	}
+
+	&_failed_bts{
+		color: red;
+	}
 }

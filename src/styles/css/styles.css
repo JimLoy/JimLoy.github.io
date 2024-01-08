@@ -431,6 +431,9 @@ template {
   font-family: inherit;
   color: #171615;
 }
+.card_failed_bts {
+  color: red;
+}
 
 .contact {
   display: flex;
@@ -464,6 +467,7 @@ template {
 }
 .contact_button {
   background-color: transparent;
+  margin: 0.5rem 0;
   padding: 1rem;
   border: 2px #171615 solid;
   border-radius: 16px;
